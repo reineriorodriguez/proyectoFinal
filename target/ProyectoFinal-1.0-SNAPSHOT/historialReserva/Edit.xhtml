@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.EditHistorialReservaTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.EditHistorialReservaLabel_fechaReserva}" for="fechaReserva" />
+                    <h:inputText id="fechaReserva" value="#{historialReservaController.selected.fechaReserva}" title="#{bundle.EditHistorialReservaTitle_fechaReserva}" />
+                    <h:outputLabel value="#{bundle.EditHistorialReservaLabel_usr}" for="usr" />
+                    <h:selectOneMenu id="usr" value="#{historialReservaController.selected.usr}" title="#{bundle.EditHistorialReservaTitle_usr}" >
+                        <f:selectItems value="#{usuarioController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.EditHistorialReservaLabel_reserva}" for="reserva" />
+                    <h:selectOneMenu id="reserva" value="#{historialReservaController.selected.reserva}" title="#{bundle.EditHistorialReservaTitle_reserva}" >
+                        <f:selectItems value="#{reservaController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.EditHistorialReservaLabel_id}" for="id" />
+                    <h:inputText id="id" value="#{historialReservaController.selected.id}" title="#{bundle.EditHistorialReservaTitle_id}" />
+                </h:panelGrid>
+                <h:commandLink action="#{historialReservaController.update}" value="#{bundle.EditHistorialReservaSaveLink}"/>
+                <br />
+                <br />
+                <h:link outcome="View" value="#{bundle.EditHistorialReservaViewLink}"/>
+                <br />
+                <h:commandLink action="#{historialReservaController.prepareList}" value="#{bundle.EditHistorialReservaShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.EditHistorialReservaIndexLink}" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>
