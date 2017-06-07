@@ -15,18 +15,24 @@
             </h:panelGroup>
             <h:form>
                 <h:panelGrid columns="2">
-                    <h:outputLabel value="#{bundle.EditUsuarioLabel_direccionUsuario}" for="direccionUsuario" />
-                    <h:inputText id="direccionUsuario" value="#{usuarioController.selected.direccionUsuario}" title="#{bundle.EditUsuarioTitle_direccionUsuario}" />
-                    <h:outputLabel value="#{bundle.EditUsuarioLabel_telfUsuario}" for="telfUsuario" />
-                    <h:inputText id="telfUsuario" value="#{usuarioController.selected.telfUsuario}" title="#{bundle.EditUsuarioTitle_telfUsuario}" />
-                    <h:outputLabel value="#{bundle.EditUsuarioLabel_usrUsuario}" for="usrUsuario" />
-                    <h:inputText id="usrUsuario" value="#{usuarioController.selected.usrUsuario}" title="#{bundle.EditUsuarioTitle_usrUsuario}" />
                     <h:outputLabel value="#{bundle.EditUsuarioLabel_nombreUsuario}" for="nombreUsuario" />
                     <h:inputText id="nombreUsuario" value="#{usuarioController.selected.nombreUsuario}" title="#{bundle.EditUsuarioTitle_nombreUsuario}" />
+                    
                     <h:outputLabel value="#{bundle.EditUsuarioLabel_apellidoUsuario}" for="apellidoUsuario" />
                     <h:inputText id="apellidoUsuario" value="#{usuarioController.selected.apellidoUsuario}" title="#{bundle.EditUsuarioTitle_apellidoUsuario}" />
+                    
+                    <h:outputLabel value="#{bundle.EditUsuarioLabel_direccionUsuario}" for="direccionUsuario" />
+                    <h:inputText id="direccionUsuario" value="#{usuarioController.selected.direccionUsuario}" title="#{bundle.EditUsuarioTitle_direccionUsuario}" />
+                    
+                    <h:outputLabel value="#{bundle.EditUsuarioLabel_telfUsuario}" for="telfUsuario" />
+                    <h:inputText id="telfUsuario" value="#{usuarioController.selected.telfUsuario}" title="#{bundle.EditUsuarioTitle_telfUsuario}" />
+                    
+                    <h:outputLabel value="#{bundle.EditUsuarioLabel_usrUsuario}" for="usrUsuario" />
+                    <h:inputText id="usrUsuario" value="#{usuarioController.selected.usrUsuario}" title="#{bundle.EditUsuarioTitle_usrUsuario}" />
+                                        
                     <h:outputLabel value="#{bundle.EditUsuarioLabel_passUsuario}" for="passUsuario" />
                     <h:inputText id="passUsuario" value="#{usuarioController.selected.passUsuario}" title="#{bundle.EditUsuarioTitle_passUsuario}" />
+                    
                     <h:outputLabel value="#{bundle.EditUsuarioLabel_id}" for="id" />
                     <h:inputText id="id" value="#{usuarioController.selected.id}" title="#{bundle.EditUsuarioTitle_id}" />
                 </h:panelGrid>

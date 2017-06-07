@@ -15,18 +15,25 @@
             </h:panelGroup>
             <h:form>
                 <h:panelGrid columns="2">
-                    <h:outputLabel value="#{bundle.CreateUsuarioLabel_direccionUsuario}" for="direccionUsuario" />
-                    <h:inputText id="direccionUsuario" value="#{usuarioController.selected.direccionUsuario}" title="#{bundle.CreateUsuarioTitle_direccionUsuario}" />
-                    <h:outputLabel value="#{bundle.CreateUsuarioLabel_telfUsuario}" for="telfUsuario" />
-                    <h:inputText id="telfUsuario" value="#{usuarioController.selected.telfUsuario}" title="#{bundle.CreateUsuarioTitle_telfUsuario}" />
-                    <h:outputLabel value="#{bundle.CreateUsuarioLabel_usrUsuario}" for="usrUsuario" />
-                    <h:inputText id="usrUsuario" value="#{usuarioController.selected.usrUsuario}" title="#{bundle.CreateUsuarioTitle_usrUsuario}" />
                     <h:outputLabel value="#{bundle.CreateUsuarioLabel_nombreUsuario}" for="nombreUsuario" />
                     <h:inputText id="nombreUsuario" value="#{usuarioController.selected.nombreUsuario}" title="#{bundle.CreateUsuarioTitle_nombreUsuario}" />
+                    
                     <h:outputLabel value="#{bundle.CreateUsuarioLabel_apellidoUsuario}" for="apellidoUsuario" />
                     <h:inputText id="apellidoUsuario" value="#{usuarioController.selected.apellidoUsuario}" title="#{bundle.CreateUsuarioTitle_apellidoUsuario}" />
+                    
+                    <h:outputLabel value="#{bundle.CreateUsuarioLabel_direccionUsuario}" for="direccionUsuario" />
+                    <h:inputText id="direccionUsuario" value="#{usuarioController.selected.direccionUsuario}" title="#{bundle.CreateUsuarioTitle_direccionUsuario}" />
+                    
+                    <h:outputLabel value="#{bundle.CreateUsuarioLabel_telfUsuario}" for="telfUsuario" />
+                    <h:inputText id="telfUsuario" value="#{usuarioController.selected.telfUsuario}" title="#{bundle.CreateUsuarioTitle_telfUsuario}" />
+                    
+                    <h:outputLabel value="#{bundle.CreateUsuarioLabel_usrUsuario}" for="usrUsuario" />
+                    <h:inputText id="usrUsuario" value="#{usuarioController.selected.usrUsuario}" title="#{bundle.CreateUsuarioTitle_usrUsuario}" />
+                    
+                    
                     <h:outputLabel value="#{bundle.CreateUsuarioLabel_passUsuario}" for="passUsuario" />
                     <h:inputText id="passUsuario" value="#{usuarioController.selected.passUsuario}" title="#{bundle.CreateUsuarioTitle_passUsuario}" />
+                    
                     <h:outputLabel value="#{bundle.CreateUsuarioLabel_id}" for="id" />
                     <h:inputText id="id" value="#{usuarioController.selected.id}" title="#{bundle.CreateUsuarioTitle_id}" />
                 </h:panelGrid>
